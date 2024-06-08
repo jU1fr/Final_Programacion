@@ -1,0 +1,24 @@
+﻿<Window x:Class="Parcial_Final.AgregarAlumno"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Parcial_Final"
+        mc:Ignorable="d"
+        Title="AgregarAlumno" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <Label Content="Carnet"/>
+            <TextBox x:Name="CarnetTextBox"/>
+            <Label Content="Nombre"/>
+            <TextBox x:Name="NombreTextBox"/>
+            <Label Content="Telefono"/>
+            <TextBox x:Name="TelefonoTextBox"/>
+            <Label Content="Grado"/>
+            <TextBox x:Name="GradoTextBox"/>
+            <Label Content="Usuario"/>
+            <ComboBox x:Name="UsuarioComboBox" DisplayMemberPath="Nombre" SelectedValuePath="UsuarioID"/>
+            <Button Content="Guardar" Click="Guardar_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
